@@ -1,0 +1,268 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+    
+}
+/* Baggrundsbillede til den del under slider og den del over footer */
+#backpic {
+    background-image: url(../img//33962112_10155515358492592_5433775671216177152_n.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+
+
+/* Udseende på navigationsbaren */
+.navbar {
+    background-color: transparent;
+    transition: background-color 200ms linear;
+}
+
+
+/* Hvilken farve navigationsbaren skal være når man scroller */
+.fixed-top.scrolled {
+  background-color: #F4AFC4 !important;
+  transition: background-color 200ms linear;
+}
+
+
+
+/* Fade in til teksten på slideren */
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-moz-keyframes fadein { /* Firefox */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-o-keyframes fadein { /* Opera */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+
+/* Ken Burns effekt (zoomer ind på billede) */
+@keyframes kenburns {
+    0% {
+      opacity: 0;
+    }
+    5% {
+      opacity: 1;
+    }
+    95% {
+        transform: scale3d(1.5, 1.5, 1.5) translate3d(-190px, -120px, 0px);
+        animation-timing-function: ease-in;
+        opacity: 1;
+    }
+    100% {
+        transform: scale3d(2, 2, 2) translate3d(-170px, -100px, 0px);
+        opacity: 0;
+    }
+}
+
+/* Tilhører Ken Burns effekt (Definition på hvor langtid der bliver zoomet i sekunder) */
+#imageContainer img {
+  animation: kenburns 50s infinite;
+}
+
+
+/* Teksten på slideren */
+.centered {
+    position: absolute;
+    top: 30%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+    font-size: 70px;
+    font-weight: bold;
+    color: white;
+    
+    animation: fadein 5s;
+    -moz-animation: fadein 5s; /* Firefox */
+    -webkit-animation: fadein 5s; /* Safari and Chrome */
+    -o-animation: fadein 5s; /* Opera */
+}
+
+
+
+
+
+/* Indholdet */
+#content {
+    text-align: center;
+    padding: 50px;
+    padding-top: 130px;
+    padding-bottom: 130px;
+    background-color: #f4bdaf;
+    
+
+}
+/* Specifik indhold i content */
+#content p, h3  {
+    text-align: left;
+}
+
+
+/* Menu knappen */
+.menubutton {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: transparent;
+    color: white;
+    font-size: 16px;
+    padding: 92px 55px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+/* Gemt element */
+#myDIV{
+    display: none;
+    width: 100%;
+    padding: 50px 0;
+    text-align: center;
+    margin-top: 20px;
+    
+}
+
+
+/* Billederne til mobil */
+.mobilmenu {
+    display: none;
+}
+
+/* Billederne til tablet */
+.tabletmenu {
+    display: none;
+}
+
+
+
+/* Indhold under info */
+#info {
+    padding: 50px;
+    background-color: #f4bdaf;
+} 
+
+.googlemaps {
+    border: 5px;
+}
+
+
+
+/* Footer */
+
+#footer {
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-left: 20px;
+    background-color: #F4AFC4;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* For tablet */
+@media only screen and (max-width: 768px) {
+    .centered {
+        font-size: 30px;
+        top: 40%;
+    } 
+    #content {
+        padding-top:110px;
+    }
+    .navbar img {
+    width: 100%;
+}
+    .deskmenu {
+        display: none;
+    }
+    .tabletmenu {
+        display: block;
+    }
+    
+    @keyframes kenburns {
+        95% {
+        transform: scale3d(2.2, 2.2, 2.2) translate3d(-190px, -120px, 0px);
+    }
+        
+}
+
+
+/* For Mobil */    
+@media only screen and (max-width: 414px) {
+      .centered {
+        font-size: 15px;
+        top: 50%;
+    }  
+    #content {
+        padding-top:110px;
+    }
+    .navbar img {
+    width: 70%;
+}
+    .mobilmenu {
+    display: block;
+}
+    .deskmenu {
+        display: none;
+    }
+ }
+
+
+
+
+
+
+
+
+
+
+
+

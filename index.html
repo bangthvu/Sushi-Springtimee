@@ -1,0 +1,210 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Sushi Springtime</title>
+    
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Jquery bibliotek -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Vores CSS dokument -->
+    <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+
+    <!-- Vores javascript dokument -->
+<script src="js/javascript.js"></script>
+    
+    <!-- w3school CSS -->
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    
+<!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    
+ <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    
+    
+</head>
+    
+    
+<body id="top-page">
+    
+    
+
+<div class="container">
+
+<!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#top-page">
+          <img src="img/logo3.png"   width="110%" alt="">
+        </a>
+    <!-- Navigations knap i mobil og tablet version -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#top-page">Home
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#om">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+        </div>
+    </nav>    
+    
+    </div>    
+    
+ <!-- Slider -->
+ <div id="slideshow">
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+        <div id="imageContainer">
+      <img class="d-block w-100" src="img/picture-849012.jpg" alt="First slide"></div>
+        <div class="centered"><p>"Bedste sushi i Århus" - Mathias J, <a href="https://www.tripadvisor.dk/ShowUserReviews-g189530-d4697733-r580873907-Sushi_Springtime-Aarhus_East_Jutland_Jutland.html">Tripadvisor</a></p></div>
+    </div>
+    <div class="carousel-item">
+        <div id="imageContainer">
+            <img class="d-block w-100" src="img/photo0jpg2.jpg" alt="Second slide"></div>
+        <div class="centered"><p>CENTERED</p></div>
+    </div>
+    <div class="carousel-item">
+        <div id="imageContainer">
+            <img class="d-block w-100" src="img/nytarsmenuen-20162.jpg"  alt="Third slide"></div>
+        <div class="centered"><p>CENTERED</p></div>
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div> 
+    </div>
+    
+	<!-- Baggrundsbillede til den del under slider og den del over footer -->
+<div id="backpic">
+    
+    <div id="om" class="container">	
+<div id="content">
+    <!-- Delt op i sectioner -->
+    <section class="row">
+        <!-- Velkommen tekst -->
+        <div class="col-lg-6">
+            <h3>VELBEKOMMEN PÅ JAPANSK</h3>
+        <p>Hos Sushi Springtime sætter vi en ære i den gode sushi og original Japansk the. Kvaliteten er baseret på godt håndværk og friskeråvarer. Vi er også altid klar, hvis i skal holde fest.</p>
+        <p>Der kan jo som bekendt være ventetid forbundet med go' mad. 
+        <p>Undgå ventetid og bestil på 22 55 55 44 før du henter.</p> <p>Du kan også bestille på sushispringtime@hotmail.com 24 timer før afhentning, så skal dit telefonnummer bare være oplyst.</p>
+        <p>Vi glæder os meget til at møde dig.</p>
+    
+        </div>
+        <!-- Menu Knap -->
+        <div class="col-lg-6">
+        <img src="img/menuknap.jpg" width="50%" alt="">
+   <button class="menubutton" onclick="myFunction()">MENU</button>
+        </div>
+        </section>
+    </div>
+    </div>
+
+    <!-- Gemt element, blivet synlig hvis man trykker på MENU knappen -->
+    <div id="myDIV">
+    
+    <!-- Billeder af menu opdelt i 1 kolonne, for mobil -->
+    <img class="mobilmenu" src="img/mobilmenu1.jpg" width="100%" alt="">
+    <img class="mobilmenu"  src="img/mobilmenu2.jpg" width="100%" alt="">
+    <img class="mobilmenu"  src="img/mobilmenu3.jpg" width="100%" alt="">
+    <img class="mobilmenu"  src="img/mobilmenu4.jpg" width="100%" alt="">
+    <img class="mobilmenu"  src="img/mobilmenu6.jpg" width="100%" alt="">
+    <img class="mobilmenu"  src="img/mobilmenu7.jpg" width="100%" alt="">
+    <img class="mobilmenu"  src="img/mobilmenu8.jpg" width="100%" alt="">
+    
+    <!-- Billeder af menu opdelt i 2 kolonner, for tablet -->
+    <img class="tabletmenu" src="img/tabletmenu1.jpg" width="100%" alt="">
+    <img class="tabletmenu" src="img/tabletmenu2.jpg" width="100%" alt="">
+    <img class="tabletmenu" src="img/tabletmenu3.jpg" width="100%" alt="">
+    <img class="tabletmenu" src="img/tabletmenu4.jpg" width="100%" alt="">
+    
+    <!-- Billeder af menu uredigeret, for desktop-->                       
+    <img class="deskmenu" src="img/menu2.jpg" width="100%">
+    <img class="deskmenu" src="img/menu.jpg" width="100%">
+
+    
+    </div> 
+    
+    
+    
+    
+<!-- Google maps -->
+<div class="container">
+    <div id="info">
+<!-- Delt op i sectioner -->
+    <section class="row">
+        <div class="col-lg-6">
+     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d934.3739065351391!2d10.20342362327673!3d56.151429933694445!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464c3f920905a833%3A0x1a95de300dd51bbd!2sSushi+Springtime!5e0!3m2!1sda!2sdk!4v1527554018959" width="80%" height="300px;" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+        <div class="col-lg-6">
+            <h3>INFO</h3>
+            <p>Sushi Springtime, Park Alle 9, 8000 Aarhus C</p>
+            <p>22 55 55 44, sushispringtime.dk</p> 
+            <p>sushispringtime@hotmail.com</p>
+            <p>Der er åbent mandag - søndag kl. 11-21</p>
+        
+        </div>
+        </section>
+    </div>
+    
+    </div>    
+    </div>
+    
+    
+<!-- Footer -->    
+<div id="footer">
+<div class="container">
+    <!-- Delt op i sectioner -->
+    <section class="row">							
+    					
+    <div class="col-lg-3">													
+    <h3>Contact</h3>
+    <p>sushispringtime@hotmaiil.com</p>
+    <a href="https://www.facebook.com/sushispringtime/"><img class="some" src="img/002-social-media.png" width="10%" alt=""/></a>
+    					
+    </div>		
+							
+    			
+    	</section>		
+    						
+    
+    		
+    </div>
+</div>
+    
+    
+    
+    </body>
+</html>
