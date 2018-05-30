@@ -14,6 +14,13 @@ body {
     padding-top: 30px;
 }
 
+/* Valg af størrelse og skrifttype af teksten på navigationsbaren */
+.nav-item {
+    font-size: 150%;
+    font-weight: 500;
+    font-family: "Helvetica" , sans-serif;
+}
+
 
 /* Udseende på navigationsbaren */
 .navbar {
@@ -75,7 +82,7 @@ body {
       opacity: 1;
     }
     95% {
-        transform: scale3d(1.5, 1.5, 1.5) translate3d(-190px, -120px, 0px);
+        transform: scale3d(1.5, 1.5, 1.5) translate3d(0px, -120px, 0px);
         animation-timing-function: ease-in;
         opacity: 1;
     }
@@ -86,7 +93,7 @@ body {
 }
 
 /* Tilhører Ken Burns effekt (Definition på hvor langtid der bliver zoomet i sekunder) */
-#imageContainer img {
+.imageContainer img {
   animation: kenburns 50s infinite;
 }
 
@@ -100,6 +107,7 @@ body {
     font-size: 70px;
     font-weight: bold;
     color: white;
+    font-family: "Helvetica" , sans-serif;
     
     animation: fadein 5s;
     -moz-animation: fadein 5s; /* Firefox */
@@ -107,6 +115,12 @@ body {
     -o-animation: fadein 5s; /* Opera */
 }
 
+
+.bottom-slider {
+    position: absolute;
+    top: 90%;
+    left: 50%
+}
 
 
 
@@ -119,11 +133,14 @@ body {
     padding-bottom: 130px;
     background-color: #f4bdaf;
     
-
 }
+
+
+
 /* Specifik indhold i content */
 #content p, h3  {
     text-align: left;
+    font-family: "Helvetica", sans-serif;
 }
 
 
@@ -144,6 +161,7 @@ body {
     text-align: center;
     font-size: 30px;
     font-weight: bold;
+    font-family: "Helvetica", sans-serif;
 }
 
 /* Gemt element */
@@ -176,7 +194,8 @@ body {
 } 
 
 .googlemaps {
-    border: 5px;
+    height: 300px;
+    border: 0;
 }
 
 
@@ -188,6 +207,11 @@ body {
     padding-top: 10px;
     padding-left: 20px;
     background-color: #F4AFC4;
+    font-family: "Helvetica", sans-serif;
+}
+
+#footer h5 {
+    text-align: center;
 }
 
 
@@ -253,6 +277,15 @@ body {
     .deskmenu {
         display: none;
     }
+    .tabletmenu {
+        display: none;
+    }
+    @keyframes kenburns {
+        95% {
+        transform: scale3d(2.2, 2.2, 2.2) translate3d(0px, -90px, 0px);
+    }
+        
+}
  }
 
 
